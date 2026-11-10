@@ -1,0 +1,283 @@
+/* ============================================================
+   Root Variables (Light + Dark Mode)
+============================================================ */
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --text: #111;
+  --muted: #666;
+  --primary: #1E1E1E;
+  --accent: #3498db;
+
+  --radius: 14px;
+  --shadow: 0px 4px 18px rgba(0,0,0,0.08);
+}
+
+body.dark {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa8bf;
+  --primary: #ffffff;
+  --accent: #58a6ff;
+}
+
+/* ============================================================
+   Global Reset
+============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 260ms ease, color 260ms ease;
+}
+
+/* ============================================================
+   Container
+============================================================ */
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+/* ============================================================
+   Card (Glass Professional Style)
+============================================================ */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 200ms ease, box-shadow 200ms ease, background 260ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Fade-in Smooth Animation */
+.fade-in {
+  animation: fadein 300ms ease both;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   Input Fields (Modern LOOK)
+============================================================ */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+  background: #fafafa;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: var(--accent);
+  background: #fff;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(52,152,219,0.3);
+}
+
+/* ============================================================
+   Buttons (Premium UI)
+============================================================ */
+button {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  border: none;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Button Variants */
+.primary {
+  background: var(--accent);
+  color: #fff;
+}
+.primary:hover {
+  background: #2d8bd0;
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+.success {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* ============================================================
+   Titles
+============================================================ */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   Water Intake Progress Bar
+============================================================ */
+.water-progress {
+  height: 18px;
+  background: linear-gradient(90deg, rgba(52,152,219,0.12), rgba(46,204,113,0.08));
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.water-progress .fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #2ecc71);
+  width: 0%;
+  transition: width 600ms ease;
+}
+
+/* ============================================================
+   Calendar Styling
+============================================================ */
+.calendar-day {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.calendar-day:hover {
+  background: #f0f7ff;
+  border-color: var(--accent);
+}
+
+/* Weekday labels */
+.calendar-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* Dot style for event */
+.event-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  margin: 4px auto 0;
+}
+
+/* ============================================================
+   Navbar Right
+============================================================ */
+.nav-right {
+  float: right;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ============================================================
+   Responsive Tweaks
+============================================================ */
+@media (max-width: 600px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .icon-img {
+    width: 56px;
+    height: 56px;
+  }
+}
+/* ========== Profile Page Enhancements ========== */
+
+.profile-card {
+  padding: 28px;
+  border-radius: var(--radius);
+}
+
+.profile-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.profile-row {
+  display: flex;
+  gap: 12px;
+}
+
+.profile-msg {
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 4px;
+}
+/* Smaller, cleaner labels */
+.label {
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: var(--text);
+}
+
+/* Make inputs smaller */
+input {
+  padding: 8px 10px !important;
+  font-size: 14px !important;
+}
+
+/* Make the profile form more compact */
+.profile-card {
+  padding: 20px !important;
+  border-radius: 12px;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 10px !important;
+}
+
+/* Smaller Save button */
+.profile-card button {
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  border-radius: 10px;
+}
+
+/* Reduce row spacing */
+.profile-row {
+  display: flex;
+  gap: 10px !important;
+}
+

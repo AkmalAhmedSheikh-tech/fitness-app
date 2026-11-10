@@ -1,0 +1,132 @@
+.plan-wrapper {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.plan-card p {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.plan-card button {
+  padding: 6px 10px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.plan-card button:hover {
+  background-color: #2563eb;
+}
+
+.edit-section {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.edit-section input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.plan-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.reset-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reset-btn:hover {
+  background-color: #dc2626;
+}
+
+.home-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.plan-input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.blue-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.blue-btn:hover {
+  background-color: #2563eb;
+}
+
+.black-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.plan-btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,124 @@
+.water-wrapper {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.home-btn-top {
+  align-self: flex-start;
+  padding: 8px 14px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.water-card {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.goal-row input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-row button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.msg {
+  font-size: 14px;
+  color: #059669;
+  margin-top: 6px;
+}
+
+.progress-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  margin: 10px 0;
+  height: 18px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.entry-item {
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #374151;
+}
+
+.no-data {
+  color: #777;
+}
+
+.btn-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chart-card {
+  max-width: 460px;
+}

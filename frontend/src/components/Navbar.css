@@ -1,0 +1,136 @@
+/* NAVBAR BASE */
+.nav-premium {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.65);
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+}
+
+.dark .nav-premium {
+  background: rgba(20,20,20,0.65);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CENTER WRAPPER */
+.nav-container {
+  width: 92%;
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.nav-logo {
+  margin: 0;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.nav-logo:hover {
+  opacity: 0.7;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* THEME BUTTON */
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+}
+
+/* AVATAR */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.08);
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 18px rgba(0,0,0,0.15);
+  animation: fadeIn 0.2s ease;
+}
+
+.dark .dropdown {
+  background: #1d1d1d;
+}
+
+.dropdown p {
+  margin: 0;
+  padding: 8px 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.15s;
+}
+
+.dropdown p:hover {
+  color: var(--accent);
+}
+
+.dropdown .logout {
+  color: #e74c3c;
+}
+
+/* AUTH BUTTONS */
+.auth-btns .btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.auth-btns .login {
+  background: transparent;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.auth-btns .signup {
+  background: var(--accent);
+  color: white;
+}
+
+.auth-btns .btn:hover {
+  opacity: 0.8;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
